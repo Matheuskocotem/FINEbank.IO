@@ -80,13 +80,18 @@
           or sign up with
         </p>
 
-        <button type="button" class="google-sognup">
+        <button type="button" class="google-signup">
+          <img 
+          src="../img/Group.svg" 
+          alt="Google Logo"
+          class="google-logo"
+          />
           Continue with Google
         </button>
 
-        <p class="text-base">
+        <p class="text-sign">
           Already have an account?
-          <router-link to="/login">Sign in here</router-link>
+          <router-link to="/login" class="sign-in-here-route">Sign in here</router-link>
         </p>
       </form>
     </section>
@@ -293,11 +298,63 @@ input::placeholder {
 }
 
 .or-sign::before {
-  left: -12px; /* Desloca mais para a esquerda */
+  left: -12px; 
 }
 
 .or-sign::after {
-  right: -12px; /* Desloca mais para a direita */
+  right: -12px; 
 }
+
+.google-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  background-color: var(--Gray-04, #E4E7EB);
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--Black, #191d23);
+  border: none;
+}
+
+.google-signup:hover {
+  background-color: #d1d5db;
+}
+
+.google-logo {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.text-sign{
+  overflow: hidden;
+  color: var(--Gray-01, #999DA3);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
+.sign-in-here-route{
+  color: var(--Primary-color, #299D91);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+}
+
 
 </style>
