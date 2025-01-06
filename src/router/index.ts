@@ -26,6 +26,14 @@ const router = createRouter({
       },
     },
     {
+      path: '/forgot-password',
+      name: 'forgot-password',
+      component: () => import('../views/auth/ForgotPassword.vue'),
+      meta: {
+        title: 'register',
+      },
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
