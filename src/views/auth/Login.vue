@@ -72,6 +72,19 @@
                 <button :class="['button-login']">
                     <div class="label">{{ text }}</div>
                 </button>
+                <p class="or-sign">
+                    or sign up with
+                </p>
+
+                <button type="button" class="google-signup">
+                    <img 
+                        src="../img/Group.svg" 
+                        alt="Google Logo"
+                        class="google-logo"
+                    />
+                        Continue with Google
+                </button>
+                <router-link to="/login" class="sign-in-here-route">Create an account</router-link>
             </form>
         </section>
     </main>
@@ -225,6 +238,7 @@ input::placeholder {
     margin-top: 10px;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    margin-bottom: 8px;
     color: var(--Black, #191d23);
 }
 
@@ -243,4 +257,143 @@ input::placeholder {
   border: 1px solid #299D91;
   border-radius: 4px;
 }
+
+.or-sign {
+  color: var(--gray-01, #999DA3);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.or-sign {
+  position: relative;
+  color: var(--gray-01, #999DA3);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.or-sign::before,
+.or-sign::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #4B5768;
+  opacity: 0.25;
+  transform: translateY(-50%);
+}
+
+.or-sign::before {
+  left: -12px; 
+}
+
+.or-sign::after {
+  right: -12px; 
+}
+
+
+.button-login {
+  background: var(--Primary-color, #299D91);
+  color: var(--White, #FFF);
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  padding: 16px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  font-family: Inter;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.button-login:hover {
+  background: var(--Primary-color, #299D91);
+  opacity: 0.9;
+}
+
+.button-login:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(41, 157, 145, 0.5);
+}
+
+.google-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  background-color: var(--Gray-04, #E4E7EB);
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--Black, #191d23);
+  border: none;
+}
+
+.google-signup:hover {
+  background-color: #d1d5db;
+}
+
+.google-logo {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.sign-in-here-route {
+    overflow: hidden;
+    color: var(--Primary-color, #299D91);
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: semibold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.google-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px;
+    background-color: var(--Gray-04, #E4E7EB);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--Black, #191d23);
+    border: none;
+    margin-bottom: 20px; 
+}
+
 </style>
