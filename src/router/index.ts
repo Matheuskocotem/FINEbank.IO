@@ -18,6 +18,14 @@ const router = createRouter({
       },
     },
     {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/auth/Login.vue'),
+      meta: {
+        title: 'register',
+      },
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
