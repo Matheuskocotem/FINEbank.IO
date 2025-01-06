@@ -1,9 +1,9 @@
 <template>
     <main>
         <section class="login-container">
-            <p class="title">
-            FINEbank.IO
-            </p>
+          <p class="title">
+            FINE<span class="bank">bank</span>.IO
+          </p>
             <form @submit.prevent="handleLogin">
                 <p class="text-base">Email Address</p>
                 <input
@@ -115,6 +115,9 @@ export default {
 
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 main {
   width: 100%;
   height: 100vh;
@@ -130,15 +133,20 @@ main {
   gap: 0px;
 }
 
-.title {
-  color: var(--Primary-color, #299d91);
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 32px;
-  letter-spacing: 3.2px;
+.title { 
+    color: var(--Primary-color, #299D91);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800; 
+    line-height: 32px;
+    letter-spacing: 2px;  
+}
+
+.bank {
+    font-weight: 500; 
+    letter-spacing: 1.5px; 
 }
 
 .text-base {
@@ -286,7 +294,7 @@ input::placeholder {
   content: '';
   position: absolute;
   top: 50%;
-  width: 40%;
+  width: 35%;
   height: 1px;
   background-color: #4B5768;
   opacity: 0.25;
@@ -294,11 +302,11 @@ input::placeholder {
 }
 
 .or-sign::before {
-  left: -12px; 
+  left: -2px; 
 }
 
 .or-sign::after {
-  right: -12px; 
+  right: -2px; 
 }
 
 
@@ -367,13 +375,14 @@ input::placeholder {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-family: semibold;
-    font-size: 16px;
+    font-size: 17px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700; 
     line-height: 24px;
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
+    text-decoration: none; 
 }
 
 .google-signup {

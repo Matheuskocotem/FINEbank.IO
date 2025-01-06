@@ -2,7 +2,7 @@
   <main>
     <section class="register-container">
       <p class="title">
-        FINEbank.IO
+            FINE<span class="bank">bank</span>.IO
       </p>
 
       <p class="Create-an-account">
@@ -142,15 +142,20 @@ main {
   gap: 0px;
 }
 
-.title {
-  color: var(--Primary-color, #299d91);
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 32px;
-  letter-spacing: 3.2px;
+.title { 
+    color: var(--Primary-color, #299D91);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800; 
+    line-height: 32px;
+    letter-spacing: 2px;  
+}
+
+.bank {
+    font-weight: 500; 
+    letter-spacing: 1.5px; 
 }
 
 .Create-an-account {
@@ -291,7 +296,7 @@ input::placeholder {
   content: '';
   position: absolute;
   top: 50%;
-  width: 40%;
+  width: 45%;
   height: 1px;
   background-color: #4B5768;
   opacity: 0.25;
@@ -299,11 +304,11 @@ input::placeholder {
 }
 
 .or-sign::before {
-  left: -12px; 
+  left: -2px; 
 }
 
 .or-sign::after {
-  right: -12px; 
+  right: -2px; 
 }
 
 .google-signup {
