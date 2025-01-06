@@ -357,34 +357,4 @@ font-weight: 600;
 line-height: 24px;
 }
 
-.button-register {
-  background: var(--Primary-color, #299D91);
-  color: var(--White, #FFF);
-  border-radius: 8px;
-  display: flex;
-  width: 100%;
-  height: 48px;
-  padding: 16px 12px;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  font-family: Inter;
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.button-register:hover {
-  background: var(--Primary-color, #299D91);
-  opacity: 0.9;
-}
-
-.button-register:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(41, 157, 145, 0.5);
-}
-
-
 </style>
