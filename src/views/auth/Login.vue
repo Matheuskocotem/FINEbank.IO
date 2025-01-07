@@ -78,7 +78,7 @@
 
                 <button type="button" class="google-signup">
                     <img 
-                        src="../img/Group.svg" 
+                        src="../../img/Group.svg" 
                         alt="Google Logo"
                         class="google-logo"
                     />
@@ -155,7 +155,7 @@ main {
   font-weight: 500;
   line-height: 20px;
   color: var(--Black, #191d23);
-  margin-bottom: 4px;
+  margin-bottom: px;
 }
 
 input {

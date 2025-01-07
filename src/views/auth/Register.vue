@@ -82,7 +82,7 @@
 
         <button type="button" class="google-signup">
           <img 
-          src="../img/Group.svg" 
+          src="../../img/Group.svg" 
           alt="Google Logo"
           class="google-logo"
           />

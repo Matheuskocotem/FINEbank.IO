@@ -111,7 +111,7 @@ h2{
   font-weight: 500;
   line-height: 12px; /* Reduzido o espaçamento entre as linhas */
   color: var(--Black, #191d23);
-  margin-bottom: 2px; /* Diminui o espaçamento entre o texto e o campo de input */
+  margin-bottom: 10px; /* Diminui o espaçamento entre o texto e o campo de input */
 }
 
 input {
