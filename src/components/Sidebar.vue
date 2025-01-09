@@ -109,9 +109,14 @@ export default defineComponent({
 .navigation-sidebar {
   background: var(--Default-Black, #191919);
   display: flex;
-  max-width: 280px;
   flex-direction: column;
+  width: 280px;
   padding: 48px 28px;
+  height: 100vh; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  overflow: auto;  
 }
 
 .brand-container {
@@ -182,6 +187,7 @@ export default defineComponent({
   border: none;
   cursor: pointer;
   width: 100%;
+  margin-top: -250px; /* Ajuste o valor conforme necessário */
 }
 
 .logout-icon {
