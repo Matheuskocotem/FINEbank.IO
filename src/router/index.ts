@@ -36,7 +36,7 @@ const router = createRouter({
     {
       path: '/overview',
       name: 'overview',
-      component: () => import('../views/overview/Overview.vue'),
+      component: () => import('../views/dashboard/overview/Overview.vue'),
       meta: {
         title: 'register',
       },
